@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWS Sample Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">AWS Sample</a>
+      <button id="themeToggle" class="btn btn-secondary" aria-label="Toggle theme">Dark Mode</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Deploy this sample website to AWS</h1>
+        <p>Fast, responsive, and ready for S3 hosting. Use this landing page as a starting point for your cloud deployment.</p>
+        <div class="hero-actions">
+          <a href="#features" class="btn btn-primary">See features</a>
+          <a href="#contact" class="btn btn-outline">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container grid grid-3">
+        <article class="card">
+          <h2>Static Hosting</h2>
+          <p>Perfect for AWS S3 + CloudFront deployments. No backend required, just upload the files and serve globally.</p>
+        </article>
+        <article class="card">
+          <h2>Responsive Design</h2>
+          <p>Built with a flexible layout that works on desktop, tablet, and mobile devices.</p>
+        </article>
+        <article class="card">
+          <h2>Interactive JavaScript</h2>
+          <p>The theme toggle button uses a small script for client-side interaction and UX polish.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <h2>About this sample</h2>
+        <p>This site is a minimal, production-ready static website that can be deployed quickly to AWS S3, Amazon Amplify, or any other static hosting provider.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-card">
+        <h2>Get started</h2>
+        <p>Copy the files into your bucket and configure your site for static website hosting. A README is included with deployment steps.</p>
+        <button id="messageButton" class="btn btn-primary">Send a message</button>
+        <p id="messageOutput" class="message-output"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 AWS Sample Website</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
